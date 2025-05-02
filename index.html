@@ -1,24 +1,138 @@
----
-layout: default
-title: My blog
----
 <!DOCTYPE html>
-<html>
-<head>
-  <title>jQuery Test</title>
-  <!-- ✅ jQuery CDN -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
-  <h1>Hello from Jekyll + jQuery!</h1>
-  <button id="btn">Click me</button>
-  <p id="message"></p>
-
-  <script>
-    $('#btn').on('click', function () {
-      $('#message').text('🧡 jQuery works on GitHub Pages!');
-    });
+<!-- コメント -->
+<html lang="en" class=" js fontface"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript">
+    
+    const currentTheme = localStorage.getItem("theme")
+    if (currentTheme) {
+      
+      const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+      if (prefersDarkScheme === (currentTheme === "dark")) localStorage.removeItem("theme")
+      else if ((prefersDarkScheme && currentTheme === "light")
+        || (!prefersDarkScheme && currentTheme === "dark")) {
+	document.documentElement.dataset.theme = currentTheme
+      }
+    }
   </script>
-</body>
-</html>
 
+  
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Git</title>
+
+  <link href="https://git-scm.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="./resources/css/index.css">
+  <script src="./resources/js/modernizr.js"></script>
+  
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner"><!--inner1-->
+    <header>
+  <a id="logo" href="https://git-scm.com/"><img src="./resources/images/myblog.png" width="100" height="100" alt="myblog" class="no-filter"></a>
+  <span id="tagline">--distributed-is-the-new-centralized</span>
+</header>
+
+  </div><!--inner1--> 
+
+  
+    
+    <div class="inner"><!--inner2--> 
+      <div id="content-wrapper">
+        
+<div tabindex="1" class="sidebar-btn"></div>
+<aside class="sidebar" id="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="https://git-scm.com/about">About</a>
+        <ul>
+          
+        </ul>
+      </li>
+      <li>
+        <a href="https://git-scm.com/doc" class="active">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="https://git-scm.com/docs">Reference</a>
+          </li>
+          <li>
+            <a href="https://git-scm.com/book" class="active">Book</a>
+          </li>
+          <li>
+            <a href="https://git-scm.com/videos">Videos</a>
+          </li>
+          <li>
+            <a href="https://git-scm.com/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="https://git-scm.com/downloads">Downloads</a>
+        <ul>
+          <li>
+            <a href="https://git-scm.com/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="https://git-scm.com/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="https://git-scm.com/community">Community</a>
+      </li>
+    </ul>
+    
+<hr class="sidebar">
+<hr class="sidebar">
+
+
+    
+  </nav>
+</aside>
+
+<div id="content">
+          
+<div id="main">
+  
+
+
+<p>
+  The entire Pro Git book, written by Scott Chacon and Ben Straub and published by Apress, is available here. All content is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution Non Commercial Share Alike 3.0 license</a>. Print versions of the book are available on <a href="https://www.amazon.com/Pro-Git-Scott-Chacon/dp/1484200772?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1430218339&amp;linkCode=as2&amp;tag=git-sfconservancy-20">Amazon.com</a>.
+  </p>
+
+  <p>The version found here has been updated with corrections and additions from <a href="https://github.com/progit/progit2/graphs/contributors">hundreds of contributors</a>. If you see an error or have a suggestion, patches and issues are welcome in its <a href="https://github.com/progit/progit2">GitHub repository</a>.
+  </p>
+
+
+
+</div><!--main-->
+</div><!--content-->
+</div><!--content-wrapper-->
+      <footer>
+  <div class="site-source">
+    <a href="https://git-scm.com/site">About this site</a><br>
+    Patches, suggestions, and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="https://git-scm.com/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+<a href="https://git-scm.com/book/en/v2#top" class="scrollToTop" id="scrollToTop" data-label="Scroll to top" style="display: none;">
+  <img src="./resources/images/arrow.png" width="20" height="20" alt="scroll-to-top">
+</a>
+
+<script src="./resources/js/jquery-1.7.1.min.js"></script>
+<script src="./resources/js/jquery-ui-1.8.18.custom.min.js"></script>
+<script src="./resources/js/jquery.defaultvalue.js"></script>
+<script src="./resources/js/session.min.js"></script>
+
+<script src="./resources/js/main.js"></script>
+
+</div><!--inner2-->
+</body></html>
